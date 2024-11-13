@@ -10,10 +10,12 @@ Delete tasks.
 Persistent data with MongoDB (tasks are saved even after page reloads).
 
 **Project Structure**
+
 Frontend: HTML, CSS, JavaScript for the UI.
 Backend: Node.js with Express for handling API requests, MongoDB for persistent storage.
 
 **Tech Stack**
+
 Frontend:
 HTML
 CSS
@@ -24,6 +26,7 @@ Express
 MongoDB (for storing tasks)
 
 **Prerequisites**
+
 Before running this project, make sure you have the following installed:
 
 Node.js
@@ -46,6 +49,7 @@ If you're running MongoDB locally, ensure your MongoDB server is running.
 If you're using MongoDB Atlas, create a cluster and replace the connection string in the .env file (create it if necessary).
 
 **Run the application:**
+
 Start the backend server: 
 npm start
 
@@ -61,6 +65,7 @@ DELETE /tasks/:id: Delete a task.
 GET /tasks: Retrieve all tasks.
 
 **Usage**
+
 Add a new task: Type in the input field and click the "Add" button to create a new task.
 
 Edit a task: Click the "Edit" button next to a task to open the modal and change the task description.
