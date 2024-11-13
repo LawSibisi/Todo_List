@@ -37,7 +37,7 @@ MongoDB (or use MongoDB Atlas for a cloud solution)
 
 **Clone the repository:**
 
-git clone https://github.com/your-username/todo-list.git
+git clone https://github.com/LawSibisi/Todo_List.git
 cd todo-list
 
 **Install dependencies:** For both frontend and backend dependencies:
