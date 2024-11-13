@@ -180,5 +180,123 @@ ul {
     font-size: 16px;
   }
 
+/* Responsive Design */
 
+/* Mobile view (small screens) */
+@media (max-width: 480px) {
+    .container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .logo {
+      width: 150px;
+    }
+  
+    .header {
+      padding: 15px;
+    }
+  
+    input {
+      width: 60%;
+      font-size: 14px;
+    }
+  
+    .addBtn {
+      width: 35%;
+      font-size: 14px;
+    }
+  
+    ul li {
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+  
+    .editBtn, .markCompleteBtn {
+      padding: 6px;
+      font-size: 14px;
+    }
+  
+    .modal-content {
+      width: 90%;
+    }
+  }
+  
+  /* Tablet view (medium screens) */
+  @media (max-width: 768px) {
+    .container {
+      width: 80%;
+    }
+  
+    .logo {
+      width: 180px;
+    }
+  
+    .header {
+      padding: 18px;
+    }
+  
+    input {
+      width: 65%;
+      font-size: 15px;
+    }
+  
+    .addBtn {
+      width: 30%;
+      font-size: 15px;
+    }
+  
+    ul li {
+      font-size: 17px;
+      padding: 12px 18px;
+    }
+  
+    .editBtn, .markCompleteBtn {
+      padding: 7px;
+      font-size: 15px;
+    }
+  
+    .modal-content {
+      width: 80%;
+    }
+  }
+  
+  /* Desktop view (larger screens) */
+  @media (min-width: 1024px) {
+    .container {
+      width: 60%;
+    }
+  
+    .logo {
+      width: 200px;
+    }
+  
+    .header {
+      padding: 20px;
+    }
+  
+    input {
+      width: 70%;
+      font-size: 16px;
+    }
+  
+    .addBtn {
+      width: 25%;
+      font-size: 16px;
+    }
+  
+    ul li {
+      font-size: 18px;
+      padding: 12px 20px;
+    }
+  
+    .editBtn, .markCompleteBtn {
+      padding: 8px;
+      font-size: 16px;
+    }
+  
+    .modal-content {
+      width: 60%;
+    }
+  }
   
