@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="logo.png" alt="Logo" class="logo"> <!-- Logo positioned as part of the background -->
+    <div class="container">
+        <div class="header">
+            <h2>My To Do List</h2>
+            <div class="input-area">
+                <input type="text" id="myInput" placeholder="Type here...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+            </div>
+        </div>
+        
+        <ul id="myUL">
+            <!-- Start with an empty list -->
+        </ul>
+    </div>
+
+    <!-- Modal for editing the task -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h3>Edit Task</h3>
+            <input type="text" id="modalInput" placeholder="Edit task...">
+
+            <button onclick="saveEdit()">Save</button>
+            <button onclick="closeModal()">Cancel</button>
+       </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

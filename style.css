@@ -1,0 +1,303 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-image: url('bg.jpg');  /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container Styling */
+.container {
+  width: 80%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: auto;
+  z-index: 1;
+}
+
+/* Header Styling */
+.header {
+  background-color: rgba(0, 123, 255, 0.8);
+  padding: 20px;
+  color: white;
+}
+
+/* Input Area Styling */
+.input-area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Add Button Styling */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #cfe3ff;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.addBtn:hover {
+  background-color: #b3d7ff;
+}
+
+/* List Item Styling */
+ul {
+  margin: 20px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 20px;
+  background: #cfe3ff;
+  font-size: 18px;
+  border-radius: 10px;
+  margin: 10px 0;
+  transition: background 0.2s, color 0.2s;
+}
+
+ul li:hover {
+  background: #b3d7ff;
+}
+
+/* Strikethrough and Styling for Completed Tasks */
+ul li.checked {
+  background: #007bff;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Edit Button Styling */
+.editBtn {
+  padding: 8px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.3s;
+}
+
+.editBtn:hover {
+  background: #518ecf;
+}
+
+/* Disabled Edit Button Styling for Completed Tasks */
+.editBtn[style*="pointer-events: none"] {
+  pointer-events: none;
+  opacity: 0.5; /* Visual effect for disabled button */
+}
+
+/* Mark Complete Button Styling */
+.markCompleteBtn {
+  padding: 8px;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.3s;
+}
+
+.markCompleteBtn:hover {
+  background: #218838;
+}
+
+/* Close Button Styling (for Remove & Modal) */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #aaa;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+
+/* Mobile view (small screens) */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .header {
+    padding: 15px;
+  }
+
+  input {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  .addBtn {
+    width: 35%;
+    font-size: 14px;
+  }
+
+  ul li {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .editBtn, .markCompleteBtn {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
+
+/* Tablet view (medium screens) */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .header {
+    padding: 18px;
+  }
+
+  input {
+    width: 65%;
+    font-size: 15px;
+  }
+
+  .addBtn {
+    width: 30%;
+    font-size: 15px;
+  }
+
+  ul li {
+    font-size: 17px;
+    padding: 12px 18px;
+  }
+
+  .editBtn, .markCompleteBtn {
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+}
+
+/* Desktop view (larger screens) */
+@media (min-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  input {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  .addBtn {
+    width: 25%;
+    font-size: 16px;
+  }
+
+  ul li {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+
+  .editBtn, .markCompleteBtn {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .modal-content {
+    width: 60%;
+  }
+}
+
+ 
